@@ -22,13 +22,12 @@ public class Persona {
     @OneToMany(mappedBy = "persona")
     List<Partecipazione> partecipazioni;
 
-    public Persona( String nome, String cognome, String email, LocalDate dataNascita, Sesso genere, List<Partecipazione> partecipazioni) {
+    public Persona( String nome, String cognome, String email, LocalDate dataNascita, Sesso genere) {
         this.nome = nome;
         this.cognome = cognome;
         this.email = email;
         this.dataNascita = dataNascita;
         this.genere = genere;
-        this.partecipazioni = partecipazioni;
     }
 
     public Persona() {

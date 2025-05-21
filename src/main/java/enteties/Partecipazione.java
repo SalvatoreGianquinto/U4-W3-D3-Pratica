@@ -18,9 +18,7 @@ public class Partecipazione {
     @Enumerated(EnumType.STRING)
     private Stato stato;
 
-    public Partecipazione(Evento evento, Persona persona, Stato stato) {
-        this.evento = evento;
-        this.persona = persona;
+    public Partecipazione(Stato stato) {
         this.stato = stato;
     }
 
